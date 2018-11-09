@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+@model Project.NET.MVC.Models.User
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sign In</title>
+
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.0/examples/sign-in/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <form class="form-signin" asp-action="Login" method="post">
+        <img class="mb-4" src="https://www.vsb.cz/share/webresources/erby/transparent/fei.png" alt="" width="200" height="220">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" class="form-control" placeholder="Enter your Login Name">
+        <span class="text-danger" asp-validation-for="UserName"></span>
+        <br />
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" id="inputPassword" placeholder="Enter your Password" type="password">
+        <span class="text-danger" asp-validation-for="Password"></span>
+        <br />
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">School Project - .NET MVC</p>
+    </form>
+
+</body>
+
+</html>
+
