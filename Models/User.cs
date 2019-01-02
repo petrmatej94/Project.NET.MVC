@@ -8,12 +8,13 @@ namespace Project.NET.MVC.Models
 {
     public class User
     {
-        [Display(Name = "Login Name")]
-        [Required(ErrorMessage = "Login must be filled in")]
+        [Display(ResourceType = typeof(Project.NET.MVC.Resources.Translation), Name = "Login", Prompt = "LoginPlaceholder")]
+        //[Required(ErrorMessage = "Login must be filled in")]
+        [Required(ErrorMessageResourceType = (typeof(Project.NET.MVC.Resources.Translation)), ErrorMessageResourceName = "LoginErrorMessage")]
         public string UserName { get; set; }
 
-        [Display(Name = "Password")]
-        [Required(ErrorMessage = "Password must be filled in")]
+        [Display(ResourceType = typeof(Project.NET.MVC.Resources.Translation), Name = "Password", Prompt = "PasswordPlaceholder")]
+        [Required(ErrorMessageResourceType = (typeof(Project.NET.MVC.Resources.Translation)), ErrorMessageResourceName = "PasswordErrorMessage")]
         public string Password { get; set; }
     }
 }

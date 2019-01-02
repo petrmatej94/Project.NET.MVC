@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc;
 using Project.NET.MVC.Models;
 using System.Web;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Localization;
+
 
 namespace Project.NET.MVC.Controllers
 {
     public class HomeController : Controller
     {
         private AlbumService albumService;
+        private readonly IStringLocalizer<HomeController> _localizer;
 
-        public HomeController(AlbumService albumService)
+        public HomeController(AlbumService albumService, IStringLocalizer<HomeController> localizer)
         {
             this.albumService = albumService;
+            this._localizer = localizer;
         }
 
         [HttpGet]
@@ -33,7 +37,7 @@ namespace Project.NET.MVC.Controllers
             {
                 if (user.UserName.Length <= 3 || user.UserName.Length >= 30)
                 {
-                    ModelState.AddModelError("UserName", "Min 3 chars, Max 30 chars");
+                    ModelState.AddModelError("UserName", Project.NET.MVC.Resources.Translation.LengthError);
                 }
             }
 
@@ -48,7 +52,7 @@ namespace Project.NET.MVC.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("UserName", "Wrong login details");
+                    ModelState.AddModelError("UserName", Project.NET.MVC.Resources.Translation.WrongDetails);
                 }
             }
 
