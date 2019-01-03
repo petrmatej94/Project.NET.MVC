@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddNewAlbum" xml:space="preserve">
+    <value>Add New Album</value>
+  </data>
+  <data name="AlbumDetails" xml:space="preserve">
+    <value>Album Details</value>
+  </data>
+  <data name="AlbumListTop" xml:space="preserve">
+    <value>All Album List</value>
+  </data>
+  <data name="AlbumName" xml:space="preserve">
+    <value>Album Name</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EnterAlbumName" xml:space="preserve">
+    <value>Enter Album Name</value>
+  </data>
+  <data name="EnterAuthor" xml:space="preserve">
+    <value>Enter Author</value>
+  </data>
+  <data name="EnterYear" xml:space="preserve">
+    <value>Enter Year</value>
+  </data>
   <data name="LengthError" xml:space="preserve">
     <value>Min. 3 chars, Max. 30 chars</value>
   </data>
@@ -144,7 +177,22 @@
   <data name="SignIn" xml:space="preserve">
     <value>Log In</value>
   </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UpdateAlbumDetails" xml:space="preserve">
+    <value>Update Album Details</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
   <data name="WrongDetails" xml:space="preserve">
     <value>Wrong Login Details</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
   </data>
 </root>

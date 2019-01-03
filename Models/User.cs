@@ -9,7 +9,6 @@ namespace Project.NET.MVC.Models
     public class User
     {
         [Display(ResourceType = typeof(Project.NET.MVC.Resources.Translation), Name = "Login", Prompt = "LoginPlaceholder")]
-        //[Required(ErrorMessage = "Login must be filled in")]
         [Required(ErrorMessageResourceType = (typeof(Project.NET.MVC.Resources.Translation)), ErrorMessageResourceName = "LoginErrorMessage")]
         public string UserName { get; set; }
 

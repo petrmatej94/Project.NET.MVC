@@ -22,8 +22,8 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">Welcome @ViewBag.currentUser</h1>
-                <p class="lead text-muted">All Albums list</p>
+                <h1 class="jumbotron-heading">@Project.NET.MVC.Resources.Translation.Welcome @ViewBag.currentUser</h1>
+                <p class="lead text-muted">@Project.NET.MVC.Resources.Translation.AlbumListTop</p>
             </div>
             <br />
 
@@ -33,7 +33,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header text-center">
-                            <h4 class="modal-title w-100 font-weight-bold">Album Details</h4>
+                            <h4 class="modal-title w-100 font-weight-bold">@Project.NET.MVC.Resources.Translation.AlbumDetails</h4>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -41,20 +41,20 @@
                         <form asp-action="AlbumList" method="post" name="insert">
                             <div class="modal-body mx-3">
                                 <div class="md-form mb-2">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Album Name</label>
+                                    <label data-error="wrong" data-success="right" for="defaultForm-email">@Project.NET.MVC.Resources.Translation.AlbumName</label>
                                     <input asp-for="ID" value="0" type="hidden">
-                                    <input asp-for="Name" class="form-control" placeholder="Enter Album Name" required>
+                                    <input asp-for="Name" class="form-control" required>
                                 </div>
                                 <div class="md-form mb-2">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Author</label>
-                                    <input asp-for="Author" class="form-control" placeholder="Enter Author" required>
+                                    <label data-error="wrong" data-success="right" for="defaultForm-email">@Project.NET.MVC.Resources.Translation.Author</label>
+                                    <input asp-for="Author" class="form-control" required>
                                 </div>
                                 <div class="md-form mb-2">
-                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Year</label>
-                                    <input asp-for="Year" class="form-control" id="inputPassword" placeholder="Enter Year" required>
+                                    <label data-error="wrong" data-success="right" for="defaultForm-email">@Project.NET.MVC.Resources.Translation.Year</label>
+                                    <input asp-for="Year" class="form-control" id="inputPassword" required>
                                 </div>
 
-                                <button type="submit" class="btn btn-default">Add</button>
+                                <button type="submit" class="btn btn-default">@Project.NET.MVC.Resources.Translation.Add</button>
                             </div>
                         </form>
                     </div>
@@ -65,7 +65,7 @@
 
 
             <div class="text-center">
-                <a href="" class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#modalLoginForm">Add New Album</a>
+                <a href="" class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#modalLoginForm">@Project.NET.MVC.Resources.Translation.AddNewAlbum</a>
             </div>
 
         </section>
@@ -87,18 +87,18 @@
                                         <div class="btn-group">
 
                                             <form action="@Url.Action("Detail", new { id=album.ID })">
-                                                <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="submit" class="btn btn-sm btn-outline-secondary">@Project.NET.MVC.Resources.Translation.View</button>
                                             </form>
 
 
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modelUpdateForm-@album.ID">Edit</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#modelUpdateForm-@album.ID">@Project.NET.MVC.Resources.Translation.Edit</button>
 
                                             <div class="modal fade" id="modelUpdateForm-@album.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                                                  aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header text-center">
-                                                            <h4 class="modal-title w-100 font-weight-bold">Update Album Details</h4>
+                                                            <h4 class="modal-title w-100 font-weight-bold">@Project.NET.MVC.Resources.Translation.UpdateAlbumDetails</h4>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
@@ -106,20 +106,20 @@
                                                         <form asp-action="AlbumListUpdate" method="post" name="update">
                                                             <div class="modal-body mx-3">
                                                                 <div class="md-form mb-2">
-                                                                    <label data-error="wrong" data-success="right" for="">Album Name</label>
+                                                                    <label data-error="wrong" data-success="right" for="">@Project.NET.MVC.Resources.Translation.AlbumName</label>
                                                                     <input asp-for="ID" type="hidden" value="@album.ID" />
-                                                                    <input asp-for="Name" value="@album.Name" class="form-control validate" placeholder="Enter Album Name" id="name" required>
+                                                                    <input asp-for="Name" value="@album.Name" class="form-control validate" id="name" required>
                                                                 </div>
                                                                 <div class="md-form mb-2">
-                                                                    <label data-error="wrong" data-success="right" for="">Author</label>
-                                                                    <input asp-for="Author" value="@album.Author" class="form-control validate" placeholder="Enter Author" required>
+                                                                    <label data-error="wrong" data-success="right" for="">@Project.NET.MVC.Resources.Translation.Author</label>
+                                                                    <input asp-for="Author" value="@album.Author" class="form-control validate" required>
                                                                 </div>
                                                                 <div class="md-form mb-2">
-                                                                    <label data-error="wrong" data-success="right" for="">Year</label>
-                                                                    <input asp-for="Year" value="@album.Year" class="form-control validate" id="inputPassword" placeholder="Enter Year" required>
+                                                                    <label data-error="wrong" data-success="right" for="">@Project.NET.MVC.Resources.Translation.Year</label>
+                                                                    <input asp-for="Year" value="@album.Year" class="form-control validate" id="inputPassword" required>
                                                                 </div>
 
-                                                                <button type="submit" class="btn btn-default">Update</button>
+                                                                <button type="submit" class="btn btn-default">@Project.NET.MVC.Resources.Translation.Update</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -133,7 +133,7 @@
                                                 <input asp-for="Name" type="hidden" value="@album.Name">
                                                 <input asp-for="Author" type="hidden" value="@album.Author">
                                                 <input asp-for="Year" type="hidden" value="@album.Year">
-                                                <button type="submit" formmethod="post" class="btn btn-sm btn-outline-secondary">Delete</button>
+                                                <button type="submit" formmethod="post" class="btn btn-sm btn-outline-secondary">@Project.NET.MVC.Resources.Translation.Delete</button>
                                             </form>
 
 

@@ -61,6 +61,105 @@ namespace Project.NET.MVC.Resources {
         }
         
         /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Add.
+        /// </summary>
+        public static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Add New Album.
+        /// </summary>
+        public static string AddNewAlbum {
+            get {
+                return ResourceManager.GetString("AddNewAlbum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Album Details.
+        /// </summary>
+        public static string AlbumDetails {
+            get {
+                return ResourceManager.GetString("AlbumDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný All Album List.
+        /// </summary>
+        public static string AlbumListTop {
+            get {
+                return ResourceManager.GetString("AlbumListTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Album Name.
+        /// </summary>
+        public static string AlbumName {
+            get {
+                return ResourceManager.GetString("AlbumName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Author.
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Edit.
+        /// </summary>
+        public static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Enter Album Name.
+        /// </summary>
+        public static string EnterAlbumName {
+            get {
+                return ResourceManager.GetString("EnterAlbumName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Enter Author.
+        /// </summary>
+        public static string EnterAuthor {
+            get {
+                return ResourceManager.GetString("EnterAuthor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Enter Year.
+        /// </summary>
+        public static string EnterYear {
+            get {
+                return ResourceManager.GetString("EnterYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný Min. 3 chars, Max. 30 chars.
         /// </summary>
         public static string LengthError {
@@ -142,11 +241,56 @@ namespace Project.NET.MVC.Resources {
         }
         
         /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Update.
+        /// </summary>
+        public static string Update {
+            get {
+                return ResourceManager.GetString("Update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Update Album Details.
+        /// </summary>
+        public static string UpdateAlbumDetails {
+            get {
+                return ResourceManager.GetString("UpdateAlbumDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný View.
+        /// </summary>
+        public static string View {
+            get {
+                return ResourceManager.GetString("View", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Welcome.
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Vyhledá lokalizovaný řetězec podobný Wrong Login Details.
         /// </summary>
         public static string WrongDetails {
             get {
                 return ResourceManager.GetString("WrongDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledá lokalizovaný řetězec podobný Year.
+        /// </summary>
+        public static string Year {
+            get {
+                return ResourceManager.GetString("Year", resourceCulture);
             }
         }
     }
