@@ -9,6 +9,7 @@ Session was used to handle logged in user.
 - Login page
 - One form with input validation
 - Contains table/grid with data which can be added / updated / deleted
+- Globalization / Localization
 
 Test User:
 - Login: petr
