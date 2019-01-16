@@ -1,6 +1,7 @@
-# This is project for subject Architecture of the .NET Technology  
-  
-Bootstrap example templates was used for frontend design. Backend is running on MVC Core 2.1.
+# Project for subject Architecture of the .NET Technology  
+This project is focused on development of Web application using MVC. 
+
+Bootstrap example template was used for frontend design. Backend is running on MVC Core 2.1.
 Session was used to handle logged in user.  
 
 ### Requirements:
